@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header ul li {
+  list-style: none;
+  margin-right: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+.header {
+  background: linear-gradient(rgba(50, 0, 100, 0.6), rgba(50, 0, 100, .3)), url(../imagenes/fondo.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+#contenedor-titulo-flex {
+  display: flex;
+  justify-content: center;
+  margin: 18vh 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  color: #fff;
+  margin: 0;
+}
+
+h2 {
+  font-size: 25px;
+  color: #fff;
+}
+
+.contenedor-titulo {
+  text-align: center;
+}
+
+.contenedor-titulo a,
+#sobre-mi a,
+#contacto input[type="submit"] {
+  font-size: 14px;
+  color: #fff;
+  background: #5cb8ff;
+  padding: 14px 24px;
+  width: 128px;
+  display: inline-block;
+}
+
+h1.logo {
+  color: #fff;
+  font-size: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+/* SECCION DE SOBRE MI */
+
+h3 {
+  text-align: center;
+  font-size: 55px;
+  font-weight: normal;
+}
+
+#sobre-mi .contenedor-sobremi {
+  display: flex;
+  justify-content: space-around;
+}
+
+#sobre-mi .texto {
+  width: 42%;
+}
+
+
+/* FOOTER */
+
+.footer {
+  background: rgb(200, 200, 200);
+  padding: 10px 0;  
+}
+
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer img {
+  margin: 0 40px;
+  transform: rotate(0);
+  transition: 0.4s;
+}
+
+.footer img:hover {
+  transform: rotate(360deg);
+  transition: 0.4s;
+}
+
+.footer p {
+  color: #fff;
+}
+
+
+
+
+
+
+
+.menu-icon {
+  display: none;
+}
+
+/* ****MEDIAS QUERY*** */
+
+@media (max-width: 800px) {
+
+  .menu-icon {
+    display: block;
+    float: right;
+    width: 40px;
+    height: 35px;
+    margin-top: 15px;
+  }
+
+  .header nav {
+    position: absolute;
+    top: 83px;
+    left: 0;
+    height: 268px;
+    background: #5cb8ff;
+    width: 100%;
+    display: none;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+  }
+
+  .header nav ul li {
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  #sobre-mi .contenedor-sobremi {
+    flex-direction: column;
+  }
+
+  #sobre-mi img {
+    width: 100%;
+  }
+
+  #sobre-mi .texto {
+    width: 100%;
+  }
+
+  .icono {
+    margin-top: 23px;
+  }
+
+  h3 {
+    font-size: 43px;
+  }
+
+  .contenedor-trabajar {
+    flex-direction: column;
+  }
+
+  .item ul {
+    padding: 0;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+
+  .footer img {
+    margin: 0 20px;
+  }
+
+}
+
+@media (min-width: 600px) and (max-width:800px) {
+  .header {
+    height: 70vh;
+  }
+
+  .servicio {
+    width: 57%;
+    padding: 34px 30px 69px 30px;
+    margin: auto;
+    margin-bottom: 45px;
+  }
+
+}
