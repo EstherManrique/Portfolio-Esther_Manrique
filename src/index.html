@@ -13,38 +13,38 @@
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 
-
     <link rel="stylesheet" href="css/style.css">
     <title>Esther Manrique - Prtafolio</title>
 </head>
+
 <body>
   <header class="header">
       <div class="menu">
           <div class="contenedor">
-            <h1 class="logo">E M G</h1>
+            <h1 class="logo">G E M </h1>
             <img class="menu-icon" src="imagenes/menu.png" alt="">
             <nav>
               <ul class="lista-menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre_mi">Sobre Mi</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mi</a></li>
                 <li><a href="#portafolio">Portafolio</a></li>
                 <li><a href="#contacto">Contacto</a></li>
               </ul>
             </nav>
           </div>
         </div>
+        <div class="contenedor" id="contenedor-titulo-flex">
+          <div class="contenedor-titulo">
+            <h1>Esther <br> Manrique González</h1>
+            <h2>Front End Developer</h2>
+            <!-- <a href="">Mi Portafolio</a> -->
+          </div>
+        </div>
   </header>
-  <div class="contenedor" id="contenedor-titulo-flex">
-    <div class="contenedor-titulo">
-      <h1>Esther Manrique González</h1>
-      <h2>Front End Developer</h2>
-      <a href="">Mi Portafolio</a>
-    </div>
-  </div>
+
 
   <!-- SOBRE MI -->
   <main>
-
     <section id="sobre-mi">
       <div class="contenedor">
         <h3>Sobre mi</h3>
@@ -53,18 +53,79 @@
             <img src="imagenes/computadoras.png">
           </div>
           <div class="texto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nemo consequuntur vitae? Deleniti, quod consequuntur. Commodi dicta veniam, ad deserunt voluptatibus dolore consequuntur sapiente error nostrum maxime hic nulla mollitia.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, non odio. Eaque a, ipsum similique amet earum voluptatum exercitationem, voluptatibus iusto error veniam corrupti quidem tempora vero labore. Architecto, deserunt?.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quae iure dolorum neque sunt sit odio ea deleniti ipsam error aperiam. Dignissimos cum nisi itaque magni id sint veniam sequi!</p>
-            
+           <p>
+             <strong>Soy apasionada por naturaleza propia, entre las cosas que más me apasionan en la vida, una de ellas es la Programación, el Diseño, Desarrollo de Software y Páginas Web.</strong>  <br><br>
+             Me encantan los retos, pero lo que más disfruto de ellos, es la busqueda y el logro de su correcta solución. <br><br>
+             Me gusta perseguir mis sueños y lograr mis metas, <strong>y pienso que no hay limites, sólo existen los que uno mismo se impone.....</strong>             
+           </p>            
           </div>
         </div>
       </div>
     </section>
 
+    <!-- PORTAFOLIO -->
+
+    <section id="portafolio">
+      <div class="contenedor">
+        <h3>Portafolio</h3>
+        <div class="contenedor-portafolio">
+          <div class="portafolio violeta">
+            <h4>Diseño Web</h4>
+            <p>Páginas web atractivas y funcionales con el objetivo de satisfacer todas las expectativas del cliente. La importancia del diseño y la funcionalidad es fundamental para tener éxito y atraer a los usuarios. También lo es la velocidad de carga del sitio web, deben ser rápidos para que el visitante tenga la mejor experiencia de usuraio.</p>
+            <img class="icono" src="imagenes/monitor.png">
+            <img class="ondas" src="imagenes/waves.png">
+          </div>
+          <div class="portafolio celeste">
+            <h4>Responsive Design</h4>
+            <p>Hoy en día las páginas web se ven en una gran variedad de dispositivos como tablets, celulares, libros electrónicos, notebooks, PCs, etc. La tecnología móvil es el presente y el futuro. Por eso es importante asegurarnos de que el sitio web sea compatible con todos los tamaños de pantalla que existen al día de hoy.</p>
+            <img class="icono" src="imagenes/mobile.png">
+            <img class="ondas" src="imagenes/waves.png">
+          </div>
+          <div class="portafolio violeta">
+            <h4>SEO</h4>
+            <p>Al crear sitios web, hay que tener muy en cuenta la optimización de los motores de búsqueda. Hay que llevar a cabo prácticas de SEO estándar en cada página del sitio web, lo que permite que el sitio tenga una clasificación más alta en los resultados de Google y asi generar mas tráfico o visitas a nuestra página web.</p>
+            <img class="icono" src="imagenes/seo.png">
+            <img class="ondas" src="imagenes/waves.png">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- CONTACTO -->
+
+    <section class="contacto" id="contacto">
+      <h3>Contacto</h3>
+      <div class="contacto-info">
+        <div class="mail"><img src="imagenes/mail-icon.png" alt="">dev.publicidadweb@gmail.com</div>
+        <div class="whatsapp"><img src="imagenes/whatsapp-icon.png" alt="">55 2852 9983</div>
+      </div>
+    </section>
+    
+    
+  
+
+
+
+
+
+  </main>
 
 
   <!-- FOOTER -->
@@ -84,73 +145,9 @@
 
 
 
-
-
-
-
-
-
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-<script src="owl/owl.carousel.min.js"></script>
-<script>
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:true,
-  dots:false,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:4
-      }
-  }
-})
-</script>
-
-<script>
-
-$(document).ready(function(){
-
-$(window).scroll(function(){
-  scroll = $(window).scrollTop();
-  if (scroll > 100) {
-    $('.menu').css({"position":"fixed"});
-    $('.menu').css({"width":"100%"});
-    $('.menu').css({"top":"0"});
-    $('.menu').css({"background":"#fff"});
-    $('.menu a').css({"color":"#000"});
-    $('.logo').css({"color":"#000"});
-    $('.menu').css({"box-shadow":"rgba(0, 0, 0, 0.22) 6px 1px 1px"});
-    $('.menu').css({"z-index":"100"});
-  } else {
-    $('.menu').css({"position":"relative"});
-    $('.menu').css({"background":"transparent"});
-    $('.menu').css({"box-shadow":"0 0 0"});
-    $('.menu a').css({"color":"#fff"});
-    $('.logo').css({"color":"#fff"});
-  }
-})
-
-$('.menu-icon').click(function(){
-  $('header nav').slideToggle();
-})
-
-})
-
-
-
-</script>
-
-
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 
 </body>
 </html>

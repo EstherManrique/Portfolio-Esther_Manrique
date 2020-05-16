@@ -6,6 +6,7 @@ body {
 .header .contenedor {
   display: flex;
   justify-content: space-between;
+  align-items: center;  
 }
 
 .header ul {
@@ -14,7 +15,7 @@ body {
 
 .header ul li {
   list-style: none;
-  margin-right: 25px;
+  margin-right: 80px;
 }
 
 a {
@@ -34,16 +35,16 @@ a {
 }
 
 #contenedor-titulo-flex {
-  display: flex;
-  justify-content: center;
+  display: flex;  
   margin: 18vh 0;
-  width: 100%;
+  width: 100%;  
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   color: #fff;
   margin: 0;
+  text-shadow: 3px 3px 2px pink;
 }
 
 h2 {
@@ -52,7 +53,11 @@ h2 {
 }
 
 .contenedor-titulo {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  margin-top: 100px;
+  margin-left: 200px; 
 }
 
 .contenedor-titulo a,
@@ -60,7 +65,7 @@ h2 {
 #contacto input[type="submit"] {
   font-size: 14px;
   color: #fff;
-  background: #5cb8ff;
+  background: rgba(50, 0, 100, 0.5);
   padding: 14px 24px;
   width: 128px;
   display: inline-block;
@@ -69,6 +74,7 @@ h2 {
 h1.logo {
   color: #fff;
   font-size: 20px;
+  text-shadow: 2px 2px 2px #fff;
 }
 
 nav ul li a {
@@ -81,17 +87,93 @@ h3 {
   text-align: center;
   font-size: 55px;
   font-weight: normal;
+  text-shadow: 2px 3px 2px rgb(128, 128, 128);
 }
 
 #sobre-mi .contenedor-sobremi {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 #sobre-mi .texto {
-  width: 42%;
+  width: 40%;
+  text-align: justify;
+}
+#sobre-mi img {
+  width: 80%;
 }
 
+/* SECCION PORTAFOLIO */
+
+.contenedor-portafolio {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.portafolio {
+  width: 24%;
+  padding: 34px 30px 38px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.portafolio h4 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.portafolio p {
+  margin-bottom: 20px;
+  height: 194px;
+}
+
+.contenedor-portafolio .violeta {
+    background: linear-gradient(to top,  #2c0044, #57267c);
+    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .9);
+}
+.contenedor-portafolio .celeste {
+    background: linear-gradient(to top, #5cb8ff, #f940f3);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .9);
+}
+
+.ondas {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.icono {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACTO */
+
+.contacto-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.contacto-info img {
+  width: 28px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
 
 /* FOOTER */
 
@@ -109,17 +191,29 @@ h3 {
 .footer img {
   margin: 0 40px;
   transform: rotate(0);
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .footer img:hover {
   transform: rotate(360deg);
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .footer p {
   color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -147,8 +241,8 @@ h3 {
     position: absolute;
     top: 83px;
     left: 0;
-    height: 268px;
-    background: #5cb8ff;
+    height: 180px;
+    background: rgba(212, 168, 255, 0.3);
     width: 100%;
     display: none;
   }
