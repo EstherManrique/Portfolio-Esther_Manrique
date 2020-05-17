@@ -7,6 +7,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;  
+  /* border: 3px solid red; */
 }
 
 .header ul {
@@ -16,6 +17,7 @@ body {
 .header ul li {
   list-style: none;
   margin-right: 80px;
+  text-shadow: 2px 2px 5px gray;
 }
 
 a {
@@ -26,6 +28,7 @@ a {
   max-width: 1280px;
   width: 90%;
   margin: auto;
+  /* border: 10px solid blue; */
 }
 
 .header {
@@ -36,33 +39,31 @@ a {
 
 #contenedor-titulo-flex {
   display: flex;  
-  margin: 18vh 0;
+  justify-content: center;
+  margin: 30vh 0;
   width: 100%;  
+  /* border: 1px solid red; */
 }
 
 h1 {
   font-size: 50px;
   color: #fff;
   margin: 0;
-  text-shadow: 3px 3px 2px pink;
+  text-shadow: -5px 5px 5px rgb(47, 0, 68);
 }
 
 h2 {
   font-size: 25px;
   color: #fff;
+  text-shadow: -3px 2px 3px rgb(47, 0, 68);
 }
 
 .contenedor-titulo {
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  margin-top: 100px;
-  margin-left: 200px; 
 }
 
-.contenedor-titulo a,
-#sobre-mi a,
-#contacto input[type="submit"] {
+.contenedor-titulo a, 
+#sobre-mi a {
   font-size: 14px;
   color: #fff;
   background: rgba(50, 0, 100, 0.5);
@@ -74,7 +75,7 @@ h2 {
 h1.logo {
   color: #fff;
   font-size: 20px;
-  text-shadow: 2px 2px 2px #fff;
+  text-shadow: -2px 2px 2px rgb(237, 198, 255);
 }
 
 nav ul li a {
@@ -85,21 +86,22 @@ nav ul li a {
 
 h3 {
   text-align: center;
-  font-size: 55px;
-  font-weight: normal;
+  font-size: 50px;
+  font-weight: bold;
   text-shadow: 2px 3px 2px rgb(128, 128, 128);
 }
 
 #sobre-mi .contenedor-sobremi {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
 }
 
 #sobre-mi .texto {
-  width: 40%;
+  width: 90%;
   text-align: justify;
 }
+
 #sobre-mi img {
   width: 80%;
 }
@@ -115,27 +117,30 @@ h3 {
 
 .portafolio {
   width: 24%;
-  padding: 34px 30px 38px 30px;
+  padding: 35px 30px 40px 30px;
   border-radius: 10px;
   margin-bottom: 40px;
   position: relative;
+  text-align: center;
 }
 
 .portafolio h4 {
   font-size: 30px;
   margin: 0;
+  text-align: center;
 }
 
 .portafolio p {
-  margin-bottom: 20px;
-  height: 194px;
+  margin-bottom: 30px;
+  height: 190px;
+  text-align: justify;
 }
 
-.contenedor-portafolio .violeta {
+.contenedor-portafolio .morado {
     background: linear-gradient(to top,  #2c0044, #57267c);
     box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .9);
 }
-.contenedor-portafolio .celeste {
+.contenedor-portafolio .rosa {
     background: linear-gradient(to top, #5cb8ff, #f940f3);
     box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .9);
 }
@@ -145,11 +150,6 @@ h3 {
   left: 0;
   bottom: 0;
 }
-
-.icono {
-  float: right;
-}
-
 
 
 
@@ -203,23 +203,31 @@ h3 {
   color: #fff;
 }
 
+/* SALTOS VISTAS*/
+
+/* #header {
+  border: 1px solid greenyellow;
+}
+
+#sobre-mi {
+  padding: 200px 0 0;
+}
+
+#portafolio {
+  padding: 150px 0 300px;
+}
+
+#contacto {
+  padding: 250px 0 300px;
+} */
+
+/* ************** */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+html {
+  scroll-behavior: smooth;
+}
 
 .menu-icon {
   display: none;
@@ -255,12 +263,13 @@ h3 {
     margin-bottom: 15px;
   }
 
-  h1 {
-    font-size: 44px;
+  .contenedor-titulo h1 {
+    font-size: 30px;
+    padding-top: 50px;
   }
 
   h2 {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   #sobre-mi .contenedor-sobremi {
@@ -275,6 +284,15 @@ h3 {
     width: 100%;
   }
 
+  .contenedor-portafolio {
+    flex-direction: column;
+  }
+
+  .portafolio {
+    width: 80%;
+    padding: 34px 30px 69px 30px;
+  }  
+
   .icono {
     margin-top: 23px;
   }
@@ -283,13 +301,6 @@ h3 {
     font-size: 43px;
   }
 
-  .contenedor-trabajar {
-    flex-direction: column;
-  }
-
-  .item ul {
-    padding: 0;
-  }
 
   input[type="text"],
   input[type="email"] {
@@ -300,6 +311,16 @@ h3 {
     margin: 0 20px;
   }
 
+  .contacto-info {
+    display: flex;
+    flex-direction: column ;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .contacto-info .whatsapp {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 600px) and (max-width:800px) {
@@ -307,11 +328,16 @@ h3 {
     height: 70vh;
   }
 
-  .servicio {
-    width: 57%;
+  #contenedor-titulo-flex {
+    font-size: 30px;
+  }
+
+  .portafolio {
+    width: 50%;
     padding: 34px 30px 69px 30px;
     margin: auto;
     margin-bottom: 45px;
   }
-
 }
+
+
