@@ -214,15 +214,37 @@ color: rgb(73, 0, 147);
 
 .contacto-info {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.contacto-info .whatsapp{
+  margin-bottom: 30px;
+}
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin-top: 60px;
 }
 
 .contacto-info img {
-  width: 28px;
+  width: 50px;
   vertical-align: middle;
   margin-right: 20px;
 }
+
+.contacto-info div {
+  font-size: 2em;
+}
+
+.contacto .redes {
+  text-align: center;
+  margin: 40px auto;
+}
+
 
 /* FOOTER */
 
@@ -232,18 +254,16 @@ color: rgb(73, 0, 147);
 }
 
 .footer .contenedor {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 
-.footer img {
+.redes img {
   margin: 0 40px;
   transform: rotate(0);
-  transition: 0.5s;
+  transition: 0.5s;  
 }
 
-.footer img:hover {
+.redes img:hover {
   transform: rotate(360deg);
   transition: 0.5s;
 }
