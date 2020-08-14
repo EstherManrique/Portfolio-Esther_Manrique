@@ -28,11 +28,10 @@ a {
   max-width: 1280px;
   width: 90%;
   margin: auto;
-  /* border: 10px solid blue; */
 }
 
 .header {
-  background: linear-gradient(rgba(50, 0, 100, 0.6), rgba(50, 0, 100, .3)), url(../imagenes/fondo.jpg);
+  background: linear-gradient(rgba(50, 0, 100, 0.6), rgba(50, 0, 100, .3));
   min-height: 100vh;
   background-size: cover;
 }
@@ -40,13 +39,12 @@ a {
 #contenedor-titulo-flex {
   display: flex;  
   justify-content: center;
-  margin: 30vh -10vw;
   width: 100%;  
   /* border: 1px solid red; */
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
   margin: 0;
   text-shadow: -5px 5px 5px rgb(47, 0, 68);
@@ -89,125 +87,8 @@ h3 {
   font-size: 50px;
   font-weight: bold;
   color: rgb(73, 0, 147);
-  text-shadow: 2px 3px 2px rgb(150, 150, 150);
+  text-shadow: 2px 3px 2px #fff;
 }
-
-#sobre-mi .contenedor-sobremi {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-#sobre-mi .texto {
-  width: 90%;
-  text-align: justify;
-}
-
-#sobre-mi img {
-  width: 80%;
-}
-
-/* SECCION PORTAFOLIO */
-
-.contenedor-portafolio {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  color: #fff;
-}
-
-.portafolio {
-  width: 24%;
-  padding: 35px 30px 40px 30px;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  position: relative;
-  text-align: center;
-}
-
-.portafolio h4 {
-  font-size: 30px;
-  margin: 0;
-  text-align: center;
-}
-
-.portafolio p {
-  margin-bottom: 30px;
-  height: 190px;
-  text-align: justify;
-}
-
-.contenedor-portafolio .morado {
-    background: linear-gradient(to top,  #2c0044, #57267c);
-    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .9);
-}
-.contenedor-portafolio .rosa {
-    background: linear-gradient(to top, #5cb8ff, #f940f3);
-    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .9);
-}
-
-.contenedor-portafolio .icono {
-  margin-top: 30px;
-}
-
-.ondas {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  
-}
-
-/* SECCION PORTAFOLIO-PROYECTOS*/
-
-#mis-proyectos {
-  background: #F9FAFC;
-}
-#mis-proyectos img {
-  width: 60%;
-  display: flex;
-  margin: 20px auto;
-}
-
-#mis-proyectos h3 {
-text-align: center;
-margin: 0 auto;
-color: rgb(73, 0, 147);
-}
-
-#mis-proyectos .contenedor-proyectos .item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-}
-
-#mis-proyectos .texto {
-  width: 100%;
-  text-align: justify;
-  margin-left: 100px;
-  font-size: 1.2em; 
-}
-
-#mis-proyectos .texto_DL {
-  width: 100%;
-  text-align: justify;
-  margin-right: 100px;
-  font-size: 1.2em;
-}
-
-#mis-proyectos img {
-  width: 90%;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 /* CONTACTO */
@@ -217,11 +98,10 @@ color: rgb(73, 0, 147);
   flex-direction: column;
   text-align: center;
   margin-top: 30px;
-
 }
 
 .contacto-info .whatsapp{
-  margin-bottom: 30px;
+  margin-bottom: 59px;
 }
 .contacto-info {
   display: flex;
@@ -250,7 +130,7 @@ color: rgb(73, 0, 147);
 
 .footer {
   background: rgb(160, 160, 160);
-  padding: 10px 0;  
+  padding: 13px 0;  
 }
 
 .footer .contenedor {
@@ -272,27 +152,7 @@ color: rgb(73, 0, 147);
   color: #fff;
 }
 
-/* SALTOS VISTAS*/
-
-/* #header {
-  border: 5px solid greenyellow;
-} */
-
-/* #sobre-mi {
-  padding: 150px 0 0;
-}
-
-#portafolio {
-  padding: 100px 0 300px;
-}
-
-#contacto {
-  padding: 100px 0;
-} */
-
 /* ************** */
-
-
 
 html {
   scroll-behavior: smooth;
@@ -345,22 +205,10 @@ html {
     flex-direction: column;
   }
 
-  #sobre-mi img {
-    width: 100%;
-  }
-
   #sobre-mi .texto {
     width: 100%;
   }
 
-  .contenedor-portafolio {
-    flex-direction: column;
-  }
-
-  .portafolio {
-    width: 80%;
-    padding: 34px 30px 69px 30px;
-  }  
 
   .icono {
     margin-top: 23px;
@@ -371,37 +219,9 @@ html {
     font-size: 35px;
   }
 
-
-
-  #mis-proyectos .texto, .texto_DL{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-
-  .contenedor-proyectos .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .contenedor-proyectos .item img {
-    width: 100%;
-  }
-
-  .contenedor-proyectos .item .texto p, .texto_DL p{
-    text-align: justify;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-
   .footer p {
     text-align: center;
   }
-
 
   .footer img {
     margin: 0 20px;
@@ -430,13 +250,6 @@ html {
 
   #contenedor-titulo-flex {
     font-size: 30px;
-  }
-
-  .portafolio {
-    width: 50%;
-    padding: 34px 30px 69px 30px;
-    margin: auto;
-    margin-bottom: 45px;
   }
 }
 
