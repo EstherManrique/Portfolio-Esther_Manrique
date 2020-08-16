@@ -29,40 +29,6 @@ a {
   margin: auto;
 }
 
-#contenedor-titulo-flex {
-  display: flex;  
-  justify-content: center;
-  margin: 30vh -10vw;
-  width: 100%;  
-}
-
-h1 {
-  font-size: 50px;
-  color: #fff;
-  margin: 0;
-  text-shadow: -5px 5px 5px rgb(47, 0, 68);
-}
-
-h2 {
-  font-size: 25px;
-  color: #fff;
-  text-shadow: -3px 2px 3px rgb(47, 0, 68);
-}
-
-.contenedor-titulo {
-  text-align: center;
-}
-
-.contenedor-titulo a, 
-#sobre-mi a {
-  font-size: 14px;
-  color: #fff;
-  background: rgba(50, 0, 100, 0.5);
-  padding: 14px 24px;
-  width: 128px;
-  display: inline-block;
-}
-
 nav ul li a {
   color: #000;
 }
@@ -75,21 +41,7 @@ h3 {
   font-weight: bold;
   color: rgb(73, 0, 147);
   text-shadow: 2px 3px 2px rgb(150, 150, 150);
-}
-
-#sobre-mi .contenedor-sobremi {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-#sobre-mi .texto {
-  width: 90%;
-  text-align: justify;
-}
-
-#sobre-mi img {
-  width: 80%;
+  margin: 20px;
 }
 
 /* SECCION PORTAFOLIO */
@@ -103,7 +55,7 @@ h3 {
 
 .portafolio {
   width: 24%;
-  padding: 35px 30px 40px 30px;
+  padding: 30px 30px 30px 30px;
   border-radius: 10px;
   margin-bottom: 40px;
   position: relative;
@@ -118,7 +70,7 @@ h3 {
 
 .portafolio p {
   margin-bottom: 30px;
-  height: 190px;
+  height: 100px;
   text-align: justify;
 }
 
@@ -132,7 +84,7 @@ h3 {
 }
 
 .contenedor-portafolio .icono {
-  margin-top: 30px;
+  margin-top: 120px;
 }
 
 .ondas {
@@ -140,110 +92,6 @@ h3 {
   left: 0;
   bottom: 0;
   
-}
-
-/* SECCION PORTAFOLIO-PROYECTOS*/
-
-#mis-proyectos {
-  background: #F9FAFC;
-  
-}
-#mis-proyectos img {
-  width: 60%;
-  display: flex;
-  margin: 20px auto;
-}
-
-#mis-proyectos h3 {
-text-align: center;
-margin: 0 auto;
-color: rgb(73, 0, 147);
-}
-
-#mis-proyectos .contenedor-proyectos .item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0px;
-}
-
-#mis-proyectos .texto {
-  width: 100%;
-  text-align: justify;
-  margin-left: 100px;
-  font-size: 1.2em; 
-}
-
-#mis-proyectos .texto_DL {
-  width: 100%;
-  text-align: justify;
-  margin-right: 100px;
-  font-size: 1.2em;
-}
-
-#mis-proyectos img {
-  width: 90%;
-}
-
-/* CONTACTO */
-
-.contacto-info {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.contacto-info .whatsapp{
-  margin-bottom: 30px;
-}
-.contacto-info {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 60px;
-}
-
-.contacto-info img {
-  width: 50px;
-  vertical-align: middle;
-  margin-right: 20px;
-}
-
-.contacto-info div {
-  font-size: 2em;
-}
-
-.contacto .redes {
-  text-align: center;
-  margin: 40px auto;
-}
-
-
-/* FOOTER */
-
-.footer {
-  background: rgb(160, 160, 160);
-  padding: 10px 0;  
-}
-
-.footer .contenedor {
-  text-align: center;
-}
-
-.redes img {
-  margin: 0 40px;
-  transform: rotate(0);
-  transition: 0.5s;  
-}
-
-.redes img:hover {
-  transform: rotate(360deg);
-  transition: 0.5s;
-}
-
-.footer p {
-  color: #fff;
 }
 
 html {
