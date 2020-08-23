@@ -133,7 +133,6 @@ h3 {
 
 #mis-proyectos {
   background: #F9FAFC;
-  
 }
 
 #mis-proyectos img {
@@ -190,7 +189,7 @@ color: rgb(73, 0, 147);
 #mis-proyectos .gif {
   display: flex;
   width: 90%;
-  margin: 20px auto;
+  margin: 130px auto;
   padding: 50px;
 }
 
@@ -303,6 +302,7 @@ html {
   .contenedor-titulo h1 {
     font-size: 30px;
     padding-top: 50px;
+    border: 1px solid red;
   }
 
   h2 {
@@ -341,7 +341,7 @@ html {
 
 
 
-  #mis-proyectos .texto, .texto_DL{
+  #mis-proyectos .texto, .texto_DL, .texto_BQ {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -349,7 +349,7 @@ html {
   }
 
 
-  .contenedor-proyectos .item {
+  .contenedor-proyectos .item, .item_BQ {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -359,7 +359,7 @@ html {
     width: 100%;
   }
 
-  .contenedor-proyectos .item .texto p, .texto_DL p{
+  .contenedor-proyectos .item .texto p, .texto_DL, .texto_BQ {
     text-align: justify;
     width: 80%;
     margin: 0 auto;
@@ -391,13 +391,14 @@ html {
   }
 }
 
-@media (min-width: 600px) and (max-width:800px) {
+@media (min-width: 600px) and (max-width: 800px) {
   .header {
     height: 70vh;
   }
 
   #contenedor-titulo-flex {
     font-size: 30px;
+    border: 1px solid blue;
   }
 
   .portafolio {
