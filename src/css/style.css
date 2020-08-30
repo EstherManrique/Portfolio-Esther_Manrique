@@ -28,7 +28,7 @@ a {
   max-width: 1280px;
   width: 90%;
   margin: auto;
-  /* border: 10px solid blue; */
+/*   border: 10px solid blue; */
 }
 
 .header {
@@ -42,7 +42,7 @@ a {
   justify-content: center;
   margin: 30vh -10vw;
   width: 100%;  
-  /* border: 1px solid red; */
+/*   border: 1px solid red; */
 }
 
 h1 {
@@ -199,17 +199,6 @@ color: rgb(73, 0, 147);
   width: 90%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* CONTACTO */
 
 .contacto-info {
@@ -217,7 +206,6 @@ color: rgb(73, 0, 147);
   flex-direction: column;
   text-align: center;
   margin-top: 30px;
-
 }
 
 .contacto-info .whatsapp{
@@ -272,24 +260,6 @@ color: rgb(73, 0, 147);
   color: #fff;
 }
 
-/* SALTOS VISTAS*/
-
-/* #header {
-  border: 5px solid greenyellow;
-} */
-
-/* #sobre-mi {
-  padding: 150px 0 0;
-}
-
-#portafolio {
-  padding: 100px 0 300px;
-}
-
-#contacto {
-  padding: 100px 0;
-} */
-
 /* ************** */
 
 
@@ -303,6 +273,16 @@ html {
 }
 
 /* ****MEDIAS QUERY*** */
+
+@media (max-width: 600px) {
+  #contenedor-titulo-flex {
+    display: flex;  
+    justify-content: center;
+    width: 100%;  
+    margin: 190px auto;
+  }
+  
+}
 
 @media (max-width: 800px) {
 
@@ -335,6 +315,13 @@ html {
   .contenedor-titulo h1 {
     font-size: 30px;
     padding-top: 50px;
+  }
+
+  #contenedor-titulo-flex {
+    display: flex;  
+    justify-content: center;
+    width: 100%;  
+    margin: 190px auto;
   }
 
   h2 {
@@ -430,6 +417,7 @@ html {
 
   #contenedor-titulo-flex {
     font-size: 30px;
+    border: hotpink 1px solid;
   }
 
   .portafolio {
